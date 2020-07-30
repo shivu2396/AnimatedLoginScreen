@@ -80,7 +80,6 @@ const SettingsScreen = () => {
             subtitle={item.subtitle}
             src={item.src}
             subpart={item.subpart}
-            is_selected={item.is_selected}
           />
         )}
         numColumns={2}

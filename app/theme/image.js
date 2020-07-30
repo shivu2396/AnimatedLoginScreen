@@ -6,7 +6,7 @@ export const Images = {
   deserts: require('./images/desert.jpg'),
   mocktails: require('./images/mocktail.jpg'),
   salads: require('./images/salads.jpg'),
-  fastfood: require('./images/fastfood.jpg'),
+  fastfood: require('./images/fastfood.png'),
   mainbanner: require('./images/mainbanner.jpg'),
   banner2: require('./images/2banner.jpg'),
   banner3: require('./images/3banner.jpg'),

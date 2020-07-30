@@ -4,7 +4,7 @@ import { Size } from '../../../app/theme/size';
 export const styles = StyleSheet.create({
   content: {
     flex: 1,
-    backgroundColor: '#8D6E63',
+    backgroundColor: 'red',
   },
   inner: {
     marginTop: Size.moderateScale(20),

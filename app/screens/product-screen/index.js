@@ -45,16 +45,15 @@ const ProductScreen = () => {
         numColumns={3}
         keyExtractor={(item, index) => item.id}
       />
-      <View style={styles.box}>
-        <Carousel
-          layout={'default'}
-          data={pic}
-          sliderWidth={500}
-          itemWidth={500}
-          renderItem={renderitem}
-          // onSnapToItem={(index) => this.setState({ activeIndex: index })}
-        />
-      </View>
+
+      <Carousel
+        layout={'default'}
+        data={pic}
+        sliderWidth={400}
+        itemWidth={400}
+        renderItem={renderitem}
+        // onSnapToItem={(index) => this.setState({ activeIndex: index })}
+      />
     </View>
   );
 };

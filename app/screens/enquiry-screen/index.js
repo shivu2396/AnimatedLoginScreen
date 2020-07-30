@@ -15,41 +15,50 @@ const EnquiryScreen = ({ navigation }) => {
         <Text style={styles.title}>
           Please fill in the enquiry form and we will get back to you asap
         </Text>
-        <View style={styles.content}>
-          <TextInput
-            style={{
-              height: 90,
-              borderBottomColor: 'white',
-              borderBottomWidth: 1,
-            }}
-            placeholder="Name*"
-          />
-          <TextInput
-            style={{
-              height: 70,
-              borderBottomColor: 'white',
-              borderBottomWidth: 1,
-            }}
-            placeholder="Phone*"
-          />
-          <TextInput
-            style={{
-              height: 70,
-              borderBottomColor: 'white',
-              borderBottomWidth: 1,
-            }}
-            placeholder="Email*"
-          />
-          <TextInput
-            style={{
-              height: 70,
-              borderBottomColor: 'white',
-              borderBottomWidth: 1,
-            }}
-            placeholder="Message*"
-          />
-        </View>
       </View>
+      <TextInput
+        style={{
+          marginHorizontal: 10,
+          padding: 10,
+          width: '90%',
+          borderBottomColor: 'white',
+          borderBottomWidth: 1,
+        }}
+        placeholder="Name*:"
+      />
+      <TextInput
+        style={{
+          marginHorizontal: 10,
+          padding: 10,
+          width: '90%',
+          borderBottomColor: 'white',
+          borderBottomWidth: 1,
+        }}
+        placeholder="Phone*:"
+      />
+      <TextInput
+        style={{
+          marginHorizontal: 10,
+          width: '90%',
+          padding: 10,
+          borderBottomColor: 'white',
+          borderBottomWidth: 1,
+        }}
+        placeholder="Email*:"
+      />
+      <TextInput
+        style={{
+          marginHorizontal: 10,
+          padding: 10,
+          width: '90%',
+          borderBottomColor: 'white',
+          borderBottomWidth: 1,
+        }}
+        placeholder="Message*:"
+      />
+      <TouchableOpacity style={styles.fotterbtn}>
+        <Text style={styles.text}> Submit</Text>
+      </TouchableOpacity>
     </View>
   );
 };

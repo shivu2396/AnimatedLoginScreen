@@ -54,7 +54,6 @@ const Innerdata = [
     subtitle: 'Blue Ridge Blend',
     src: Images.main,
     subpart: 'Iced',
-    is_selected: false,
   },
   {
     id: 7,
@@ -62,7 +61,6 @@ const Innerdata = [
     subtitle: 'Blue Ridge Blend',
     src: Images.main,
     subpart: 'Iced',
-    is_selected: false,
   },
 ];
 export default Innerdata;

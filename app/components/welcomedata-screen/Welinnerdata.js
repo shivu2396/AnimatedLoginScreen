@@ -12,6 +12,7 @@ const Category = ({ title, src, subtitle, OnPress, id, subpart }) => (
       <Image style={styles.logo1} source={Images.main} />
       <Text style={styles.innertext}> Rs 200</Text>
       <FontAwesome style={styles.innertext1} name="heart-o" size={30} />
+      <Text style={styles.TITLE}>{subpart}</Text>
     </TouchableOpacity>
   </View>
 );

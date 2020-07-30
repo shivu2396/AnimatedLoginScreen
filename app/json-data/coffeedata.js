@@ -1,0 +1,68 @@
+import { Images } from '../theme/image';
+const Innerdata = [
+  {
+    id: 0,
+    title: 'Frappe',
+    subtitle: 'Blue Ridge Blend',
+    src: Images.main,
+    subpart: 'Iced',
+    is_selected: false,
+  },
+  {
+    id: 1,
+    title: 'Caramel',
+    subtitle: 'Blue Ridge Blend',
+    src: Images.main,
+    subpart: 'Cold',
+    is_selected: false,
+  },
+  {
+    id: 2,
+    title: 'Cafe Mocha',
+    subtitle: 'Blue Ridge Blend',
+    src: Images.main,
+    subpart: 'Hot',
+    is_selected: false,
+  },
+  {
+    id: 3,
+    title: 'Cafe Cubano',
+    subtitle: 'Blue Ridge Blend',
+    src: Images.main,
+    subpart: 'Hot',
+    is_selected: false,
+  },
+  {
+    id: 4,
+    title: 'Turkish Coffee',
+    subtitle: 'Blue Ridge Blend',
+    src: Images.main,
+    subpart: 'Cold',
+    is_selected: false,
+  },
+  {
+    id: 5,
+    title: 'Espresso',
+    subtitle: 'Blue Ridge Blend',
+    src: Images.main,
+    subpart: 'Cold',
+    is_selected: false,
+  },
+  {
+    id: 6,
+    title: 'Fredo Espresso',
+    subtitle: 'Blue Ridge Blend',
+    src: Images.main,
+    subpart: 'Iced',
+    is_selected: false,
+  },
+  {
+    id: 7,
+    title: 'Iced Coffe',
+    subtitle: 'Blue Ridge Blend',
+    src: Images.main,
+    subpart: 'Iced',
+    is_selected: false,
+  },
+];
+export default Innerdata;

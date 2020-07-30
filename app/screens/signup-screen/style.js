@@ -32,7 +32,6 @@ export const styles = StyleSheet.create({
   },
   action: {
     flexDirection: 'row',
-
     marginTop: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#f2f2f2',
@@ -49,10 +48,10 @@ export const styles = StyleSheet.create({
     flex: 1,
     marginTop: Platform.OS === 'ios' ? 0 : -12,
     paddingLeft: 10,
-    color: '#05375a',
+    color: '#8D6E63',
   },
   errorMsg: {
-    color: '#FF0000',
+    color: '#8D6E63',
     fontSize: 14,
   },
   button: {
@@ -68,7 +67,7 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
   },
   signUp: {
-    borderColor: '#009387',
+    borderColor: '#8D6E63',
     borderWidth: 1,
     marginTop: 15,
     width: '100%',

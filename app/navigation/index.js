@@ -1,34 +1,24 @@
 import * as React from 'react';
-
+import { View, Text, TouchableOpacity, StatusBar, Image } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import SplashScreen from '../screens/landing-screen/index';
+import EnquiryScreen from '../screens/enquiry-screen/index';
 import SignInScreen from '../screens/signin-screen/index';
-// import SettingsScreen from '../screens/home-screen/index';
+import SignUpScreen from '../screens/signup-screen/index';
+import SettingsScreen from '../screens/welcome-screen/index';
+import ProductScreen from '../screens/product-screen/index';
 
 const Stack = createStackNavigator();
 function AuthStack() {
   return (
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="Splash" component={SplashScreen} />
-      <Stack.Screen name="SignInScreen" component={SignInScreen} />
+      {/* <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
+      <Stack.Screen name="SignInScreen" component={SignInScreen} /> */}
     </Stack.Navigator>
-  );
-}
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
-function StoreScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
-    </View>
   );
 }
 
@@ -45,19 +35,29 @@ function BottomTab() {
         name="setting"
         component={SettingsScreen}
         options={{
-          tabBarLabel: 'Discover',
+          tabBarLabel: 'Home',
           tabBarIcon: ({ size, color }) => (
             <MaterialCommunityIcons name="home" size={size} />
           ),
         }}
       />
       <Tab.Screen
-        name="store"
-        component={StoreScreen}
+        name="product"
+        component={ProductScreen}
         options={{
-          tabBarLabel: 'Library',
+          tabBarLabel: 'Products',
           tabBarIcon: ({ size }) => (
-            <MaterialCommunityIcons name="newspaper" size={size} />
+            <MaterialCommunityIcons name="menu" size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="enquiry"
+        component={EnquiryScreen}
+        options={{
+          tabBarLabel: 'Enquiry',
+          tabBarIcon: ({ size }) => (
+            <MaterialCommunityIcons name="enquiry" size={size} />
           ),
         }}
       />

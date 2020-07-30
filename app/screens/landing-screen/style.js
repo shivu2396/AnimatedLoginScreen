@@ -1,55 +1,71 @@
-import { StyleSheet, Dimensions } from 'react-native';
-const { height } = Dimensions.get('screen');
-const height_logo = height * 0.28;
+import { StyleSheet } from 'react-native';
+import { Size } from '../../../app/theme/size';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#009387',
+    backgroundColor: '#8D6E63',
   },
   header: {
     flex: 2,
     justifyContent: 'center',
     alignItems: 'center',
   },
+  circle: {
+    width: Size.deviceHeight * 0.3,
+    height: Size.deviceHeight * 0.3,
+    borderRadius: Size.moderateScale(110),
+  },
   footer: {
     flex: 1,
-    borderTopLeftRadius: 30,
-    borderTopRightRadius: 30,
-    paddingVertical: 50,
-    paddingHorizontal: 30,
+    borderTopLeftRadius: Size.moderateScale(30),
+    borderTopRightRadius: Size.moderateScale(30),
+    paddingVertical: Size.moderateScale(50),
+    paddingHorizontal: Size.moderateScale(30),
   },
   logo: {
-    width: height_logo,
-    height: height_logo,
+    width: Size.deviceHeight * 0.3,
+    height: Size.deviceHeight * 0.3,
+    borderRadius: Size.moderateScale(110),
   },
   title: {
-    color: '#009387',
-    fontSize: 30,
+    color: '#8D6E63',
+    fontSize: Size.moderateScale(30),
     fontWeight: 'bold',
   },
-  text: {
-    color: 'grey',
-    marginTop: 5,
-  },
+
   button: {
-    alignItems: 'flex-end',
-    marginTop: 30,
+    flexDirection: 'row',
+    marginTop: Size.moderateScale(30),
   },
   box: {
     width: 150,
     borderWidth: 0.5,
     borderRadius: 3,
-    backgroundColor: '#009387',
+    backgroundColor: '#8D6E63',
     height: 40,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 50,
     flexDirection: 'row',
   },
+  but: {
+    flexDirection: 'row',
+    width: 150,
+    borderWidth: 0.5,
+    borderRadius: 3,
+    borderColor: '#8D6E63',
 
+    height: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 50,
+    marginHorizontal: 10,
+  },
+  textSign1: {
+    color: '#8D6E63',
+  },
   textSign: {
-    textAlign: 'center',
-    color: 'black',
+    color: 'white',
   },
 });

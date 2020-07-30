@@ -39,6 +39,7 @@ var constraints = {
     presence: { allowEmpty: false },
     equality: {
       attribute: 'password',
+      messsage: 'Not match',
     },
   },
   // confirm: {
